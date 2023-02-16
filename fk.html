@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="#Home"><img class="logo" src='logo.png' width="90px"></a>
+        <form class="search-bar">
+            <label for="search"></label>
+            <div>
+                <input type="text" name="search" id="search" placeholder="Search for items" >
+            </div>
+        </form>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#h">Become a seller</a></li>
+                <li><a href="#h"><img src="cart.png" height="16px" alt="cart-icon"> Cart</a></li>
+                <li><a href="#h">More <img src="arr.png" height="5px" alt="cart-icon"></a></li>
+            </ul>
+        </nav>
+        <a href="login.html"><button>Login</button></a>
+    </header>
+    <div class="box1">
+        <ul class="box1-links">
+            <li><img src="topoffers.webp" height="60px">Top Offers</li>
+            <li><img src="grocery.webp" height="60px">Grocery</li>
+            <li><img src="mobiles.webp" height="60px">Mobiles</li>
+            <li><img src="fashion.webp" height="60px">Fashion</li>
+            <li><img src="electronics.webp" height="60px">Electronics</li>
+            <li><img src="home.webp" height="60px">Home</li>
+            <li><img src="appliances.webp" height="60px">Appliances</li>
+            <li><img src="travel.webp" height="60px">Travel</li>
+        </ul>
+    </div>
+    <div class="container" style=" display:flex; align-items: center; flex-direction: column;">
+        
+        <div class="slider">
+
+            <img src="1.png" id="slideimage" width="1500px">
+            <a class="prev" onclick="change_image()">&#10094;</a>
+            <a class="next" onclick="change_image()">&#10095;</a>
+            
+        </div>
+        <div class="dod">
+            <div class="box2">
+                <div class="upper">
+                    <ul>Deals of The Day</ul>
+                    <a href="viewall"><button>VIEW ALL</button></a>
+                </div>
+                <div class="box1-links">
+                    
+                        <li><img src="dod1.webp" height="100%px"><br>Gaming TWS <ul class="green">From $1.99</ul><ul class="grey">Shop now</ul> </li>
+                        <a href="fk2.html" target="_blank"><li><img src="dod2.webp" height="100%"><br>Gamepads<ul class="green">Upto 45% off</ul><ul class="grey">Check more</ul ></li></a>
+                        <li><img src="dod3.webp" height="100%"><br>Televisions <ul class="green">Lowest price ever</ul><ul class="grey">Add to Cart</ul></li>
+                        <li><img src="dod3.webp" height="100%"><br>Televisions <ul class="green">Lowest price ever</ul><ul class="grey">Add to Cart</ul></li>
+                            <a class="next2"onclick="change_image()">&#10095;</a>
+                    </div>
+            </div>
+            <div class="box3">
+                <img src="boat.png" height="320px">
+            </div>
+        </div>
+        
+        <div class="featured">
+            <ul>Featured Brands</ul>
+            <ul class="brands">
+                <div class="brand"><img src="fb2.png" ><div></div></div>
+                <div class="brand"><img src="fb1.png" ><div></div></div>
+                <div class="brand"><img src="fb3.png"><div></div></div>
+                <div class="brand"><img src="fb4.png" ><div></div></div>
+            </ul>
+        </div>
+       
+    </div>
+    <footer>
+        <p class="text-center">Copyright &copy Flipkart </p>
+        <div class="line"></div>
+        <p class="text-center">     All Rights Reserved</p>
+
+
+    </footer>
+</body>
+<script>
+    function slide1(){
+        document.getElementById("slideimage").src="s2.png"
+    }
+    function slide2(){
+        document.getElementById("slideimage").src="1.png"
+    }
+    setInterval(slide1, 2000);  
+    setInterval(slide2, 4000);
+    
+    
+</script>
+</html>
